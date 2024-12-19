@@ -1,0 +1,149 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #1e1e2f; /* Dark gray background */
+    color: #ffffff; /* White text */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2e2e3e; /* Slightly lighter gray */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed; /* Keep header fixed at the top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+header .logo {
+    font-family: 'Iceberg', cursive;
+    font-size: 1.8rem;
+    color: #e5bf5b; /* Gold color */
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden; /* Prevent overflow */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e63946; /* Red hover */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    height: 75vh; /* Adjusted height */
+    background: url('../images/fortress.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff; /* Ensure text stands out */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay for transparency */
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'Iceberg', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #e5bf5b; /* Gold */
+    position: relative;
+    z-index: 2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #2e2e3e; /* Slightly lighter gray background */
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-family: 'Iceberg', cursive;
+    font-size: 2.5rem;
+    color: #e5bf5b; /* Gold color */
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-us .image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.about-us .image-row img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2e2e3e;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
