@@ -128,12 +128,11 @@ header nav ul li a:hover {
 }
 
 .about-us .image-row img {
-    width: 100px;
-    height: 100px;
+    width: 150px; /* Increased size */
+    height: 150px; /* Maintain square aspect ratio */
     object-fit: cover;
-    border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
+} /* Removed border-radius */
 
 /* Footer */
 footer {
