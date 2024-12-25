@@ -60,7 +60,7 @@ header nav ul li a:hover {
 .hero {
     text-align: center;
     height: 75vh; /* Adjusted height */
-    background: url('../images/fortress.png'); /* Background image */
+    background: url('../images/fortress2.gif'); /* Background image */
     background-size: cover;
     background-position: center;
     position: relative;
